@@ -1,0 +1,21 @@
+﻿@using CustomerData.Models
+
+@{
+    var customer = ViewData["Customer"] as CustomerEntity;
+}
+<h5 style="text-align:end">@Html.ActionLink("Return to List", "Index")</h5>
+<p>
+    Id: @customer.Id
+</p>
+<p>
+    First Name: @customer.FirstName
+</p>
+<p>
+    Last Name: @customer.LastName
+</p>
+<p>
+    Address: @customer.Address
+</p>
+<p>
+    Phone: @customer.Phone
+</p>
